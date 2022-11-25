@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.supplysystem.headerController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#99e2e7" height="61.0" stroke="BLACK" strokeType="INSIDE" width="500.0" AnchorPane.rightAnchor="0.0" />
+      <ImageView fitHeight="500" fitWidth="500">
+         <image>
+            <Image url="@head.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="searchtext" alignment="TOP_LEFT" layoutX="14.0" layoutY="17.0" prefHeight="26.0" prefWidth="166.0" promptText="Search">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutX="196.0" layoutY="18.0" mnemonicParsing="false" onMouseClicked="#search" prefHeight="26.0" prefWidth="63.0" text="Search" />
+      <Button fx:id="loginbutton" layoutX="414.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#login" prefHeight="26.0" prefWidth="71.0" text="Log in" />
+      <Label fx:id="email" layoutX="414" layoutY="17" onMouseClicked="#logout" />
+      <Button fx:id="logoutButton" layoutX="300.0" layoutY="17.0" mnemonicParsing="false" opacity="0.0" text="Logout" />
+   </children>
+</AnchorPane>
